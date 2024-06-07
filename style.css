@@ -1,0 +1,180 @@
+.container{
+    height: 100vh;
+    background-color: var(--Violet);
+    color: white;
+}
+
+.desktop{
+    background-image: url(./src/img/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.huddle{
+    margin-left: 50px;
+}
+
+.desktop a.title{
+    background: none;
+}
+
+.img{
+    display: flex;
+    margin: 50px;
+}
+
+
+.info{
+    padding-left: 70px;
+}
+
+h2{
+    line-height: 60px;
+    font-size: 40px;
+}
+
+p{
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+a{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.info a{
+    padding: 15px 40px;
+}
+
+.info a:hover{
+    color: var(--Soft-Magenta);
+    transition: 0.6s;
+}
+
+.info ul{
+    margin: 40px 0;
+}
+
+footer ul{
+    display: flex;
+    font-size: 30px;
+    justify-content: flex-end;
+}
+
+footer li{
+    padding: 0 10px;
+}
+
+footer a{
+    background:none;
+    color: white;
+}
+
+footer a:hover{
+    color: black;
+    transition: 0.6s;
+}
+
+@media (max-width: 1024px) {
+   
+   html{
+    background-color: var(--Violet);
+    background-image: url(./src/img/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+    
+    .img img{
+        width: 100%;
+    }
+
+    .img{
+        flex-direction: column;
+    }
+
+    .info{
+        padding-left: 0;
+    }
+
+    .info h2{
+        padding-top:20px ;
+    }
+
+    
+
+    footer ul{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .desktop{
+        padding:0;
+    }
+
+    .huddle{
+        padding-top: 20px;
+    }
+
+    footer ul{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .img img{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .desktop{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info{
+       padding: 0 20px;
+    }
+
+    .img li a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .img{
+        margin: 0;
+        padding: 0;
+    }
+
+    .huddle{
+        margin: 100px 0 20px 0 ; 
+    }
+}
+
+@media (max-width: 375px) {
+   img.huddle{
+    margin-top: 160px;
+   }
+}
+
+@media (max-width: 320px) {
+    a.title{
+        margin-top: 80px;
+       }
+}
+
+
+
+
+
+
+
